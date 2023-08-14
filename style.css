@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 7px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 46rem;
+
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header .bg-image-iletisim {
+    position: absolute;
+    background-image: url(images/iletisim-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.5s;
+
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#section-a {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+    width: 100%;
+    height: auto;
+}
+
+#section-b {
+    padding: 2rem;
+}
+
+#section-b ul {
+    list-style: none;
+}
+
+#section-b li {
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content {
+    padding: 1.5rem;
+}
+
+#section-c {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+
+#section-d .box {
+    padding: 5rem;
+}
+
+#section-d .box:first-child {
+    background-color: darkslategray;
+}
+
+
+#section-e {
+    background-color: #000;
+    padding: 5rem;
+}
+
+
+
+
+/* FOOTER */
+
+.page-title h2 {
+    /* Sayfadan ayrı büyüyüp küçülmesini istersek font-size tanımlayabiliriz.*/
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #ececec;
+    font-weight: 600;
+    padding: 5rem;
+    margin-bottom: -20px;
+    /* Sayfadan ayrı büyüyüp küçülmesini istersek font-size tanımlayabiliriz.*/
+}
+
+.footer {
+    background-color: #161515;
+}
+
+.footer-copyright {
+    /* Sayfadan ayrı büyüyüp küçülmesini istersek font-size tanımlayabiliriz.*/
+    color: #fff;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    margin-top: -45px;
+    margin-bottom: 0;
+    /* Sayfadan ayrı büyüyüp küçülmesini istersek font-size tanımlayabiliriz.*/
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-outline {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    color: #212529;
+    background-color: #fff;
+}
+
+.btn-social {
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: auto 15px;
+    margin-bottom: 50px;
+
+}
+
+.btn-social a {
+    color: #fff;
+}
+
+.btn-social i {
+    font-size: 2.5rem;
+}
+
+
+
+.footer-social:first child {
+    margin-left: 55px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    color: yellowgreen;
+}
+
+
+/* FOOTER */
+
+
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #000;
+    transition: 0.5s;
+
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 1.5rem;
+}
+
+.menu ul {
+    display: inline-block;
+    position: absolute;
+    left: auto;
+    right: 3rem;
+    top: 0.5rem;
+}
+
+.sol-logo {
+    display: block;
+    float: left;
+}
+
+
+/* ANASAYFA RESPONSİVE */
+
+
+@media screen and (min-width:320px) {
+
+    .sol-logo img {
+        height: 100%;
+        width: 150px;
+        margin-top: 12px;
+        margin-left: 30px;
+    }
+
+}
+
+
+@media screen and (min-width:800px) {
+    html {
+        font-size: 9px;
+    }
+
+    .sol-logo img {
+        height: 100%;
+        width: 180px;
+        margin-top: 12px;
+        margin-left: 30px;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 11px;
+    }
+
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+    .sol-logo img {
+        height: 100%;
+        width: 220px;
+        margin-top: 12px;
+        margin-left: 30px;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .menu .yazi {
+        display: none;
+    }
+
+}
+
+/* ANASAYFA RESPONSİVE BİTİŞ */
+
+
+/* HAMBURGER AYARLAR BAŞLANGIÇ */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .acik {
+        display: none;
+    }
+}
+
+.acik {
+    color: #fff;
+    float: right;
+    margin-right: 1px;
+}
+
+/* HAMBURGER AYARLAR BİTİŞ */
+
+
+
+/* FORM AYARLARI VE FORM RESPONSİVE BAŞLANGIÇ  */
+
+.form-elemanlar label {
+    padding: 2.5rem;
+    display: block;
+}
+
+
+
+@media screen and (min-width:320px) {
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        width: 240px;
+        background-color: #000;
+        color: #eaeaea;
+        border: 0px solid;
+        border-radius: 8px;
+    }
+
+    textarea {
+        width: 240px;
+        height: 170px;
+
+    }
+
+
+}
+
+@media screen and (min-width:800px) {
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        width: 240px;
+        background-color: #000;
+        color: #eaeaea;
+    }
+
+    textarea {
+        width: 240px;
+        height: 170px;
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        width: 240px;
+        background-color: #000;
+        color: #eaeaea;
+    }
+
+    textarea {
+        width: 240px;
+        height: 170px;
+
+    }
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+input[type="text"] {
+    height: 25px;
+    width: 235px;
+}
+
+input[type="email"] {
+    height: 25px;
+    width: 235px;
+}
+
+/* FORM AYARLARI VE FORM RESPONSİVE BİTİŞ */
